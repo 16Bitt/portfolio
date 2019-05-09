@@ -2,13 +2,13 @@
   .col.s12
     .card.blue.darken-2.white-text
       .card-content
-        .card-title FORTHstrap
+        %h3 FORTHstrap
 
 .row
   .col.s12
     .card
       .card-content
-        .card-title A small FORTH with a toolchain for easily porting to new environments
+        .card-title.grey-text.text-darken-1 A small FORTH with a toolchain for easily porting to new environments
         %blockquote 
           What's better than the FORTH programming language on one architecture? How about native 
           FORTH on any architecture?
@@ -20,12 +20,17 @@
   .col.s12.m6
     .card
       .card-content
-        .card-title Execution Architectures
+        .card-title.grey-text.text-darken-1 Execution Architectures
         %ul.collection
-          %ul.collection-item x86 Hosted - Quick and dirty application development on Linux!
+          %ul.collection-item 
+            %strong.orange-text.text-darken-4 x86 Hosted
+            Quick and dirty application development on Linux!
           %ul.collection-item
-            x86 Unhosted - Boot straight from master boot record to a serial console on a standard PC
-          %ul.collection-item 8086 Unhosted - A booter disk environment for 16-bit PCs
+            %strong.orange-text.text-darken-4 x86 Unhosted
+            Boot straight from master boot record to a serial console on a standard PC
+          %ul.collection-item 
+            %strong.orange-text.text-darken-4 8086 Unhosted
+            A booter disk environment for 16-bit PCs
 
   .col.s12.m6
     .card
@@ -38,13 +43,13 @@
   .col.s12
     .card.blue.darken-2.white-text
       .card-content
-        .card-title Virtix
+        %h3 Virtix
 
 .row
   .col.s12
     .card
       .card-content
-        .card-title A tiny UNIX-like of my own
+        .card-title.grey-text.text-darken-1 A tiny UNIX-like of my own
         %blockquote
           It's hard to appreciate how operating systems work without building one or two yourself. 
           The x86 architecture is a mystifying place, but the tried-and-true approach of keeping 
@@ -53,24 +58,33 @@
         %label Features:
         %ul.collection
           %li.collection-item
-            A small C userspace - Build software using a C toolchain and a small subset of the 
+            %strong.orange-text.text-darken-4 A small C userspace:
+            Build software using a C toolchain and a small subset of the 
             standard C library written from scratch
           %li.collection-item
-            Multitasking - Fork processes, spawn subprocesses, and use system calls to send signals
+            %strong.orange-text.text-darken-4 Multitasking:
+            Fork processes, spawn subprocesses, and use system calls to send signals
             to other processes
           %li.collection-item
-            ELF Executable Support - Strip out unneeded symbols and Virtix can load your binary as
+            %strong.orange-text.text-darken-4 ELF Executable Support:
+            Strip out unneeded symbols and Virtix can load your binary as
             per the ELF standard, allowing the standard GNU toolchain to be used to compile 
             userspace programs
           %li.collection-item
-            File System - Introducing DeepFAT, a simple abstraction on top of FAT12/16 that allows 
+            %strong.orange-text.text-darken-4 File System:
+            Introducing DeepFAT, a simple abstraction on top of FAT12/16 that allows 
             for UNIX style directories
           %li.collection-item
-            Virtual File System - Find devices in the system's file tree, read and write using the 
+            %strong.orange-text.text-darken-4 Virtual File System:
+            Find devices in the system's file tree, read and write using the 
             UNIX everything-is-a-file methodology
           %li.collection-item
-            Clock - Hardware support for the Real Time Clock
+            %strong.orange-text.text-darken-4 Clock:
+            Hardware support for the Real Time Clock
           %li.collection-item
-            Memory Protected Userspace - Null pointer dereferencing, stack overflows, etc. are all 
+            %strong.orange-text.text-darken-4 Memory Protected Userspace:
+            Null pointer dereferencing, stack overflows, etc. are all 
             handled by the hardware
+      .card-action
+        %a{href: 'https://github.com/16bitt/virtix'} Try it out!
 
