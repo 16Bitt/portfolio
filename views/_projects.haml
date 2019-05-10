@@ -2,17 +2,66 @@
   .col.s12
     .card.blue.darken-2.white-text
       .card-content
+        %h3 KConf
+
+.row
+  .col.s12
+    .card
+      .card-content
+        .card-title.grey-text.text-darken-1
+          A portable configuration system for developing with docker-compose and Kubernetes
+          simultaneously.
+        %blockquote 
+          My Kubernetes configs and my docker-compose configs are almost identical. Why not make
+          a consilidated configuration format?
+        As a developer heavily involved in ops and easing my team's development workflows, I found
+        myself frustrated with the amount of copy-pasted YAML every time a new configuration was
+        added or updated. This project aims to consilidate all configuration into a single YAML file
+        that generates env files, Dockerfiles, deployments, secrets, and configmaps, as well as
+        mapping between local development dependencies and helm releases.
+      .card-action
+        %a{href: 'https://github.com/16bitt/kconf'} Collaborate!
+ 
+.row
+  .col.s12
+    .card.blue.darken-2.white-text
+      .card-content
+        %h3 TCLS
+
+.row
+  .col.s12
+    .card
+      .card-content
+        .card-title.grey-text.text-darken-1
+          An HTTP server written from scratch in TCL
+        %blockquote 
+          I wanted to learn about the HTTP implementation and TCL, so I combined them into a simple
+          project.
+        TCLS is a small, from-scratch HTTP server written in TCL. While not nearly feature complete,
+        it can handle basic static content serving, and understands HTTP verbs, MIME types, and a
+        basic routing DSL is provided as well.
+      .card-action
+        %a{href: 'https://github.com/16bitt/tcls'} Fork it!
+
+.row
+  .col.s12
+    .card.blue.darken-2.white-text
+      .card-content
         %h3 FORTHstrap
 
 .row
   .col.s12
     .card
       .card-content
-        .card-title.grey-text.text-darken-1 A small FORTH with a toolchain for easily porting to new environments
+        .card-title.grey-text.text-darken-1
+          A small FORTH with a toolchain for easily porting to new environments
         %blockquote 
           What's better than the FORTH programming language on one architecture? How about native 
           FORTH on any architecture?
-        ForthStrap is a FORTH implementation written from the ground up to be portable. The build process uses a simple porting interface that allows very quick deployment to any architecture desired. After the initial environment is built, ForthStrap programs can work portably between any architecture.
+        ForthStrap is a FORTH implementation written from the ground up to be portable. The build
+        process uses a simple porting interface that allows very quick deployment to any 
+        architecture desired. After the initial environment is built, ForthStrap programs can work
+        portably between any architecture.
       .card-action
         %a{href: '/forthstrap'} Give it a spin!
 

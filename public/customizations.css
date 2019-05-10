@@ -13,3 +13,8 @@ h3 {
 .card-title.grey-text {
   font-weight: 200 !important;
 }
+
+/* Lighten up that font weight! */
+a.brand-logo {
+  font-weight: 100;
+}
