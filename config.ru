@@ -2,4 +2,5 @@
 
 require "#{__dir__}/boot.rb"
 
-run Sinatra::Application
+map('/') { run RootController }
+map('/text_alerts') { run TextAlertsController }

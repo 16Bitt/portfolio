@@ -1,0 +1,29 @@
+%h3 Sign up for Corona Virus alerts in Arkansas
+
+.row
+  .col.s12
+    %p
+      As the Corona Virus (COVID-19) has swept across the globe, I've found myself
+      becoming anxious and refreshing the Arkansas ADH home page over and over. I've
+      created a web scraper that will update you as soon as the number of confirmed
+      cases in Arkansas changes.
+
+%form.row{method: 'POST', action: '/text_alerts'}
+  .col.m8.offset-m2
+    .card
+      .card-content
+        %span.card-title Contact Information
+        .row
+          .input-field.col.s12
+            - if @invalid
+              %input.invalid{value: @phone, id: 'phone', name: 'phone', type: 'text'}
+            - else
+              %input{value: @phone, id: 'phone', name: 'phone', type: 'text'}
+            %label{for: 'phone'} Phone Number
+            %span.helper-text{data: { error: 'Invalid phone number' }}
+        %p This information will only be used for Coronavirus text alerts.
+      .card-action.right-align
+        %button.waves-effect.waves-light.btn-small.red.darken-4.white-text
+          Subscribe
+          %i.material-icons.right send
+
